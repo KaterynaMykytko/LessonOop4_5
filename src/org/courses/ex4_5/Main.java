@@ -4,11 +4,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ConvertTemperatureToKelvin convertTemperatureToKelvin = new ConvertTemperatureToKelvin(32);
-        ConvertTemperatureToFaringate convertTemperatureToFaringate = new ConvertTemperatureToFaringate(15);
+        int t = 32;
 
-        convertTemperatureToKelvin.convert();
-        convertTemperatureToFaringate.convert();
+        ConvertTemperatureToKelvin convertTemperatureToKelvin = new ConvertTemperatureToKelvin();
+        ConvertTemperatureToFaringate convertTemperatureToFaringate = new ConvertTemperatureToFaringate();
+
+        convertTemperatureToKelvin.convert(t);
+        convertTemperatureToFaringate.convert(t);
     }
-
 }
